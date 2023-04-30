@@ -1,0 +1,13 @@
+.list-cash {
+  width: 50%;
+}
+.button {
+  border: 1px solid #d4d2db;
+  background-color: #585076;
+  color: #d4d2db;
+  padding: 10px;
+  margin: 10px;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+}
