@@ -1,45 +1,39 @@
 .bg-container {
-  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px;
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  padding: 30px;
+  width: 50%;
+  border-radius: 13px;
+  padding: 20px;
+
   background-color: #150b3e;
 }
 .profile-container {
   display: flex;
   flex-direction: row;
 }
-.profile {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  background-color: #c7d2fe;
-  color: #7c3aed;
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 13px;
+.profile-icon-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #c7d2fe;
+  color: #7c3aed;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
 }
 .profile-name {
   font-family: 'Roboto';
-  font-size: 23px;
   color: #d4d2db;
-  font-weight: 600;
-  margin-left: 20px;
-  margin-top: 25px;
+  font-size: 23px;
+  font-weight: 900;
 }
 .balance-container {
   display: flex;
@@ -47,44 +41,47 @@
   justify-content: space-between;
 }
 .balance-heading {
+  color: #585076;
   font-family: 'Roboto';
   font-size: 23px;
-  color: #585076;
-  font-weight: 500;
-}
-.amount-container {
-  display: flex;
-  flex-direction: column;
-}
-.cash {
-  font-family: 'Roboto';
-  font-size: 40px;
-  color: #d4d2db;
-  font-weight: bold;
-}
-.rupees-para {
-  font-family: 'Roboto';
-  font-size: 13px;
-  color: #382f5a;
-  margin-top: 0px;
-}
-.withdraw-heading {
-  font-family: 'Roboto';
-  font-size: 25px;
-  color: #d4d2db;
-  font-weight: bold;
-}
-.sum-para {
-  font-family: 'Roboto';
-  font-size: 19px;
-  color: #382f5a;
   font-weight: 900;
 }
-.cards-list {
+.amount-display-container {
+}
+.amount {
+  color: #c4c4c4;
+  font-family: 'Roboto';
+  font-size: 27px;
+  font-weight: 900;
+}
+.rupees-para {
+  color: #585076;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+}
+.withdraw-heading {
+  color: #c4c4c4;
+  font-family: 'Roboto';
+  font-size: 27px;
+  font-weight: 900;
+}
+.choose-option-para {
+  color: #585076;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+}
+.amount-lists {
   padding-left: 0px;
-  list-style-type: none;
-  flex-wrap: wrap;
   width: 100%;
   display: flex;
   flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+  }
 }
