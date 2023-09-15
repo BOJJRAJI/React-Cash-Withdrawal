@@ -1,13 +1,20 @@
-.list-cash {
-  width: 50%;
+.list-item {
+  width: 45%;
+  margin-top: 10px;
 }
 .button {
-  border: 1px solid #d4d2db;
-  background-color: #585076;
-  color: #d4d2db;
-  padding: 10px;
-  margin: 10px;
+  border: 1px solid #c4c4c4;
+  background-color: #382f5a;
+  color: #c4c4c4;
   height: 50px;
-  width: 150px;
+  width: 80%;
   border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
